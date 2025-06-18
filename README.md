@@ -1,13 +1,23 @@
-# Sample Hardhat Project
+# Blockchain Journey: Counter & MyContract
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+A simple Hardhat project demonstrating two Solidity contracts—  
+1. **Counter**: a minimal counter with increment functionality  
+2. **MyContract**: examples of state variables and secure constructor injection of an address via `.env`
 
-Try running some of the following tasks:
+---
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
-```
+## 📂 Project Structure
+
+```text
+├── contracts/
+│   ├── Counter.sol
+│   └── MyContract.sol
+├── scripts/
+│   └── deploy_with_ethers.ts
+├── test/                 # Optional: your test files (Mocha/Chai)
+├── .env                  # Environment variables (ignored by Git)
+├── .gitignore
+├── hardhat.config.js
+├── package.json
+├── tsconfig.json         # TypeScript config
+└── README.md
